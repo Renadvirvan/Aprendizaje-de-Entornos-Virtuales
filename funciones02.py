@@ -2,17 +2,18 @@ def promParcial():
     califPar = []
     promParMat = 0
 
+    # Asking for the user to input 3 grades and then appending them to the list califPar.
     for i in range(0,3):
         califPar.append(float(input("Ingresa tu calificacion del parcial "+str(i+1)+"\n")))
 
+    # Adding the values of the list califPar and then dividing it by 3.
     for j in califPar:
-        promParMat += j        
+        promParMat += j            
     return (promParMat/3)
 
 def promGeneral(nmat):
     califMat = []
     sumM = 0
-
     for i in range(0,nmat):
         print("Calificaciones de la materia "+str(i+1))
         califMat.append(promParcial())
